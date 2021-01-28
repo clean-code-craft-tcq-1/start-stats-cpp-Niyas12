@@ -1,4 +1,7 @@
+#pragma once 
+
 #include <vector>
+#include "IAlert.h"
 
 struct Stats
 {
@@ -7,19 +10,7 @@ struct Stats
     float f32Max;
 };
 
-class IAlerter
-{
 
-public:
-    virtual void DoAlert() = 0;
-};
-
-class EmailAlert: public IAlerter
-{
-public:
-    bool emailSent = false;
-    virtual void DoAlert();
-};
 class LEDAlert : public IAlerter
 {
 public:
