@@ -1,6 +1,6 @@
 #include <vector>
 
-typedef struct Stats
+struct Stats
 {
     float f32Average;
     float f32Min;
