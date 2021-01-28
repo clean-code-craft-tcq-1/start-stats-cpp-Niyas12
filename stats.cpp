@@ -2,6 +2,7 @@
 #include <vector>
 #include <numeric>
 #include <algorithm>
+#include <cmath>
 #include "stats.h"
 
 Stats Statistics::m_sStat = { NAN, NAN, NAN };
