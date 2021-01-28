@@ -2,8 +2,9 @@
 
 #include "catch.hpp"
 #include "stats.h"
-
+#include <iostream>
 #include <cmath>
+#include <cfloat>
 
 TEST_CASE("reports average, minimum and maximum") {
     auto computedStats = Statistics::ComputeStatistics({1.5, 8.9, 3.2, 4.5});
