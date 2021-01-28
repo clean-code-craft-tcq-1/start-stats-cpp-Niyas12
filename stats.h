@@ -11,22 +11,6 @@ struct Stats
 };
 
 
-class LEDAlert : public IAlerter
-{
-public:
-    bool ledGlows = false;
-    virtual void DoAlert();
-};
-
-class StatsAlerter
-{
-private:
-    float m_maxThreshold;
-    std::vector<IAlerter*> m_alerters;
-public:
-    StatsAlerter(float maxThreshold, std::vector<IAlerter*> alerters);
-    void checkAndAlert(const std::vector<float>& data);
-};
 
 class Statistics
 {
