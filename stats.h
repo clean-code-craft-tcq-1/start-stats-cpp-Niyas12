@@ -5,9 +5,9 @@
 
 struct Stats
 {
-    float f32Average;
-    float f32Min;
-    float f32Max;
+    float Average;
+    float Min;
+    float Max;
 };
 
 

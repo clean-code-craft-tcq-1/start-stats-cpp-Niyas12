@@ -11,18 +11,18 @@
 TEST_CASE("reports average, minimum and maximum") {
     auto computedStats = Statistics::ComputeStatistics({1.5, 8.9, 3.2, 4.5});
     float epsilon = 0.001;
-    REQUIRE(std::abs(computedStats.f32Average - 4.525) < epsilon);
-    REQUIRE(std::abs(computedStats.f32Max - 8.9) < epsilon);
-    REQUIRE(std::abs(computedStats.f32Min - 1.5) < epsilon);
+    REQUIRE(std::abs(computedStats.Average - 4.525) < epsilon);
+    REQUIRE(std::abs(computedStats.Max - 8.9) < epsilon);
+    REQUIRE(std::abs(computedStats.Min - 1.5) < epsilon);
 }
 
 TEST_CASE("average is NaN for empty array") {
     auto computedStats = Statistics::ComputeStatistics({});
     //All fields of computedStats (average, max, min) must be
 
-    REQUIRE(std::isnan(computedStats.f32Average));
-    REQUIRE(std::isnan(computedStats.f32Max));
-    REQUIRE(std::isnan(computedStats.f32Min));
+    REQUIRE(std::isnan(computedStats.Average));
+    REQUIRE(std::isnan(computedStats.Max));
+    REQUIRE(std::isnan(computedStats.Min));
 }
 
 TEST_CASE("raises alerts when max is greater than threshold") {
