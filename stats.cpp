@@ -26,10 +26,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& data) {
     return m_sStat;
 }
 
-void EmailAlert::DoAlert()
-{
-    emailSent = true;
-}
+
 
 void LEDAlert::DoAlert()
 {
