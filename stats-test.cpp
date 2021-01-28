@@ -4,7 +4,8 @@
 #include "catch.hpp"
 #include "stats.h"
 #include "EmailAlert.h"
-
+#include "LEDAlert.h"
+#include "StatsAlerter.h"
 #include <cmath>
 
 TEST_CASE("reports average, minimum and maximum") {
